@@ -1,0 +1,247 @@
+.back1{
+    background-color:  #34170F; 
+    lighting-color: slategray;
+    color: white;
+}
+.top1{
+    font-family:  Algerian, monospace;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #1C130C;
+}
+.logo1
+{
+    background-color: #ffffff;
+}
+#btnDive{
+/*float:left;*/
+display: flex;
+
+}
+
+.btnDivList{
+    list-style-type: none;
+    margin-right: 12px;
+    margin-left: 0px;
+    text-decoration: none;
+    }
+    .btn > #childList{
+    display: none;
+    padding: 10px;}
+#childList{
+    position:absolute;
+    top: 320px;
+    left: 320px;
+    list-style-type: none;
+    border: 4px solid darkmagenta;
+    border-color: darkblue;
+   background-color: lightgreen;
+      }
+  .btn:hover > #childList{
+    display: block;
+    font-size: 28px;
+  }
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 32;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 2px 1px 3px #ffffff;
+  -moz-box-shadow: 2px 1px 3px #ffffff;
+  box-shadow: 2px 1px 3px #3498db;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  width: 200px;
+text-align: center;
+border: 1px solid #ffffff;
+margin-bottom: 5px;
+line-height: 1px;
+border-color: lightcoral;
+    
+    
+}
+
+    {
+    list-style-image: url(images/hotel.jpg);}
+    li { margin: 0px 45px;
+}
+a:hover {
+color: blue;
+text-decoration: none;}
+a:visited {
+color: greenyellow;}
+
+a:active {
+color: red;}
+a{
+color: deeppink;
+}
+
+.btn  a {
+text-decoration: none;
+    
+}
+.pic1{
+
+    border: 1px solid #ffffff;
+    width: 35%; height: 300px;
+}
+   .pic2{
+ padding: 500px, 20px, 300px, 200px;
+background-image-color:  #34170F;   
+    background-color: #cccccc;
+    outline-style: solid;
+    outline-color: white;
+    
+    
+    
+    }
+   td.pic2 { 
+ min-width: 5px;
+ max-width:15px;
+ 
+}
+.timecountry{
+background-color: greenyellow;
+font-weight: bold;
+}
+
+.b02{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+text-decoration: center;
+letter-spacing: .1em;
+font-weight: bold;
+font-size: 12px;
+}
+.flag1{
+    background-color:#34170F;
+}
+.bttn{
+    background-color: rgb(100,50,50);
+    width: 150px;
+padding: 9px 14px;
+
+
+}
+
+.bttn > a{
+    text-decoration: none;
+    
+}
+
+    .center_btn{
+text-align: center;
+    }
+.country{
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*foods.html*/
+
+ .slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+
+}
+     
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.8s ease;
+  border-radius: 0 6px 6px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.10);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+        /*aboutus*/
+.j1{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+font-size: 234px;
+font-size-adjust: 50px;
+font-weight: bold;
+font-variant-position: initial;
+
+}
+
+.form1{
+    border-radius: 44px; 
+}
+
