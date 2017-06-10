@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KGC Foods Menu</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        .setValue {
+            width: 60%;
+            height: 200px;
+        }
+        
+        .show {
+            display: block;
+        }
+        
+        .hide {
+            display: none;
+        }
+        .j1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 24px;
+font-size-adjust: 50px;
+font-weight: bold;
+font-variant-position: initial;; 
+
+}
+    </style>
+
+</head>
+
+<body class="back1">
+    <a href="mailto:exporters@grpofcompanies.org"> <img src="images/K5.png"> <img src="images/95581890.gif" width="1060" height="170"> </a>
+    <div class="top1"> Taste of Traditions </div> <br>
+
+<div>
+    
+    <div id="btnDive">
+        <ul class="btnDivList">
+         <br>   <li class="btn"> <a href="index.html"> Home </a> </li> <br>
+            <li class="btn"> <a href="Foods.html"> Foods Menu </a> </li><br>
+            <li class="btn"> <a href="About.html"> About Us </a> </li><br>
+            <li class="btn"> <a href="Contact.html"> Contact Us </a> </li>
+        </ul>
+
+    <!--<div class="slideshow-container">
+  <div class="mySlides fade">
+     <img src="images/001.jpg" style="width:150%" ">
+    <div class="text"> </div>
+  </div>
+   <div class="mySlides fade">
+        <img src="images/002.jpg" style="width:150%" >
+    <div class="text"> </div>
+  </div>
+  <div class="mySlides fade">
+        <img src="images/003.jpg" style="width:150%" >
+    <div class="text"> </div>
+  </div>
+   <div class="mySlides fade">
+  <img src="images/004.jpg" style="width:150%">
+    <div class="text">  </div>
+  </div>
+   <div class="mySlides fade">
+        <img src="images/005.jpg" style="width:150%">
+    <div class="text">  </div>
+  </div>
+   <div class="mySlides fade">
+        <img src="images/006.jpg" style="width:150%">
+    <div class="text"> </div>
+  </div>
+  <div class="mySlides fade">
+        <img src="images/007.jpg" style="width:150%">
+    <div class="text"> </div>
+    </div>
+
+ <div class="mySlides fade">
+        <img src="images/008.jpg" style="width:130%">
+    <div class="text"> </div>
+    </div>
+     <div class="mySlides fade">
+        <img src="images/009.jpg" style="width:130%">
+    <div class="text"> </div>
+    </div>
+     <div class="mySlides fade">
+        <img src="images/010.jpg" style="width:130%">
+    <div class="text"> </div>
+    </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>-->
+
+    <div style="text-align: center">
+        <ul>
+            <li id="0"><img src="images/001.jpg" alt="" class="setValue"></li>
+            <li id="1"><img src="images/002.jpg" alt="" class="setValue"></li>
+            <li id="2"><img src="images/003.jpg" alt="" class="setValue"></li>
+            <li id="3"><img src="images/004.jpg" alt="" class="setValue"></li>
+            <li id="4"><img src="images/005.jpg" alt="" class="setValue"></li>
+            <li id="5"><img src="images/006.jpg" alt="" class="setValue"></li>
+            <li id="6"><img src="images/007.jpg" alt="" class="setValue"></li>
+            <li id="7"><img src="images/008.jpg" alt="" class="setValue"></li>
+            <li id="8"><img src="images/009.jpg" alt="" class="setValue"></li>
+            <li id="9"><img src="images/010.jpg" alt="" class="setValue"></li>
+        </ul>
+        <!--<a href="javascript:void(0)" onclick="nextImage()"> Next </a>-->
+    </div>
+
+
+</div>
+</div>
+    <script>
+        var totalImages = 10;
+        var currentImage = 0;
+        nextImage();
+        function nextImage() {
+
+            for (var i = 0; i < totalImages; i++) {
+
+                if (currentImage == i)
+                    document.getElementById(i).className = "show";
+                else
+                    document.getElementById(i).className = "hide";
+            }
+            currentImage++;
+            if (currentImage == totalImages)
+                currentImage = 0;
+        }
+
+        setInterval(function(){
+            nextImage();
+        },3000)
+        
+    </script>
+
+
+    <div>
+        <p class="j1" align=justify> Inaugurated on the 14th of September in 2016, <b> KHIDIJA RESTAURANT</b> started serving authentic Pakistani dishes
+            and its signature Bar.B.Q dishes. The sincere efforts of our visionary founders made Khadija Restaurant a modern
+            symbol of hygiene & quality, and within months their aspirations yielded fruitful results. It was their devotion,
+            and determination that turned this dream into reality, winning hearts all over the country and beyond. </p>
+        <p class="j1" align=justify> Khadija Restaurant in Karachi is the first branch of Daily chain of restaurants outside Pakistan. Daily chain of
+            Restaurants have been serving excellent Bar B Q and Pakistani cusine for over two decades. Daily Restaurant believes
+            in highest standards of quality of taste, hygiene and service. Our Karachi based locations offer delivery throughout
+            the downtown core seven days a week, provide take out, fast pick-up and on site catering in addition to full
+            table service. The restaurant occupies an entire 4-storey elegant building with air-conditioned halls and total
+            capacity of over 400 customers at one time. Families are seated on the first floor and up. The Restaurant offers
+            a relaxed atmosphere and great food Like Bar B Q, Nihari, Paye, hand cut Mutton Qeema , Sweet Dishes and much
+            more at reasonable prices. Besides Daily Lunch and Dinner, Sunday breakfast is also a huge hit and is served
+            until 4 p.m. We take Reservations for small and large groups as we have separate halls for private parties with
+            options of A la carte and buffet Bulk orders can also be placed and customers can be assured of same quality
+            of food as served at the restaurant, We offer free delivery service in Clifton and D.H.A. Cuisine: Pakistani
+            & Middle eastern. Some of our popular dishes include: Chicken Reshmi Kabab, Bihari Kabab, Fish Tikka, Chollu
+            Kabab, Nihari, Mutton Paye, Mutton Qeema, Hari Mirch, Grilled Chicken Steak.
+        </p>
+        <p class="j1" align=justify>In the light of the local efforts to accelerate economic development, highlighting the relation between feasibility
+            studies and the economic growth is essential. Economic literature as well as contemporary experience of the conditional
+            correlation between adhering to the approach of preparing feasibility studies for the industrial factories before
+            their setting up, and the rate of growth realized not only in the industrial sector, but in the economy as a
+            whole. It is true that the growth depends on available economic resources, but the economic efficiency depends
+            on the method of allocating these resources. This is the core of the feasibility study's importance because it
+            aims at realizing the maximum efficiency in using the available resources.</p>
+
+
+
+        <a href="https://www.facebook.com/krfastfood" /><img src="images\facebook.png" align="left" /></a>
+    </div>
+
+ <hr>
+            <div class="b02" align="center"> Copyright <i class="fa fa-copyright fa-1.90x"  aria-hidden="true" style="color:red"></i>  all the right of Khadija Restaurant</div>
+ 
+</body>
+
+<!--<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+        
+</script>-->
+
+
+
+</html>

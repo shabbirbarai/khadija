@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KGC Foods Menu</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        .hide {
+            display: hide;
+        }
+        .cent{
+            margin: 0 auto;
+        }
+        .fa-trash{
+            color: red;
+        }
+
+
+    </style>
+</head>
+
+<body class="back1">
+    <a href="mailto:exporters@grpofcompanies.org"> <img src="images/K5.png" /> <img src="images/coollogo_com-43462567.gif" width="1060" height="170" class="logo1" /> </a>
+    <div class="top1"> Taste of Traditions </div> <br>
+
+
+
+    <div id="btnDive">
+        <ul class="btnDivList">
+            <li class="btn"> <a href="index.html"> Home </a> </li>
+            <li class="btn"> <a href="Foods.html"> Foods Menu </a> </li>
+            <li class="btn"> <a href="About.html"> About Us </a> </li>
+            <li class="btn"> <a href="Contact.html"> Contact Us </a> </li>
+        </ul>
+    </div>
+
+    <div id="mainDiv">
+    </div>
+    <table id="tb1" class="cent">
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>  </th>
+                
+            </tr>
+        </thead>
+    </table>
+    </div>
+    <div class="order-btn">
+        
+        <button onclick="placeOrder()" onclick="alert(submitted)">Order Now</button>
+    </div>
+    
+   <hr>
+            <div class="b02" align="center"> Copyright <i class="fa fa-copyright fa-1.90x"  aria-hidden="true" style="color:red"></i>  all the right of Khadija Restaurant</div>
+ 
+</body>
+<script>
+    var items = localStorage.getItem("whishlist") || [];
+    var whishListItems = localStorage.getItem("whishlist") || [];
+    whishListItems = JSON.parse(whishListItems)
+    items.length > 0 ? items = JSON.parse(items) : false;
+    if (!items.length) {
+        document.getElementById("mainDiv").innerHTML = "No item selected!!"
+    }
+    var totalItems = 0;
+    var totolPrice = 0;
+    showData();
+    function showData() {
+        for (var i = 0; i < items.length; i++) {
+            document.getElementById("tb1").innerHTML += `<tr> <td id="img-td"> <img src="./images/` + items[i].image + `" alt="" class="imageSize" ></td><td> ` + items[i].name + `</td><td><button  onclick="decrementItem(` + i + `)"><i class="fa fa-minus"></i></button>`+ "<span id=qty>"+ items[i].quantity + "</span>" + `<button onclick="incrementItem(` + i + `)"><i class="fa fa-plus"></i></button> </td><td> ` + items[i].price * items[i].quantity + `/-</td><td><button  onclick="removeItem(` + i + `)"><i class="fa fa-trash" aria-hidden="true" ></i></td> </tr>`
+            totalItems += items[i].quantity;
+            totolPrice += items[i].quantity * items[i].price;            
+    }
+        document.getElementById("tb1").innerHTML += `<tr><td colspan="3">Total items :`+ totalItems +`</td><td>Total Price : `+ totolPrice +`/-</td></tr>`
+    }
+   
+function showButtons(id) {
+    document.getElementById(id).childNodes[3].childNodes[0].style.opacity = 0.7;
+    document.getElementById(id).childNodes[3].childNodes[1].style.opacity = 0.7;
+
+}
+function hideButtons(id) {
+    document.getElementById(id).childNodes[3].childNodes[0].style.opacity = 0;
+    document.getElementById(id).childNodes[3].childNodes[1].style.opacity = 0;
+
+}
+function incrementItem(index) {
+    window.location.reload();
+    var i = items[index];
+    var elementPosition = whishListItems.map(function (item) {
+        return item.id
+    }).indexOf(i.id);
+    elementPosition > -1 ? whishListItems[elementPosition].quantity++ : (i.quantity++ , whishListItems.push(i));
+    // countTotalItems();
+    console.log(whishListItems);
+    localStorage.setItem("whishlist", JSON.stringify(whishListItems));
+}
+
+function decrementItem(index) {
+    window.location.reload();
+    var i = items[index];
+    var elementPosition = whishListItems.map(function (item) {
+        return item.id
+    }).indexOf(i.id);
+    elementPosition > -1 && whishListItems[elementPosition].quantity > 0 ? whishListItems[elementPosition].quantity-- : elementPosition > -1 && whishListItems[elementPosition].quantity == 0 ? whishListItems.splice(elementPosition, 1) : false;
+    //  countTotalItems();
+    console.log(whishListItems);
+    whishListItems.length > 0 ? localStorage.setItem("whishlist", JSON.stringify(whishListItems)) : localStorage.removeItem("whishlist");
+}
+    function placeOrder(){
+        localStorage.removeItem("whishlist");
+    }
+    function countTotalItems() {
+    totalItems = 0;
+    whishListItems.forEach(function (item) {
+        totalItems += item.quantity;
+    })
+    document.getElementById("whishlist").innerHTML = totalItems;
+}
+    
+    
+</script>
+<script>
+ function removeItem(index) {
+       console.log(whishListItems)
+      var i = items[index];
+    var elementPosition = whishListItems.map(function (item) {
+        return item.id
+    }).indexOf(i.id);
+    elementPosition > -1 ? whishListItems.splice(elementPosition, 1) : true;
+  localStorage.setItem("whishlist", JSON.stringify(whishListItems));
+     window.location.reload();
+    console.log(whishListItems);
+ }
+            </script>
+
+
+
+</html>

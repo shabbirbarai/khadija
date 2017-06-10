@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KGC Foods Menu</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body class="back1">
+    <a href="mailto:customersupport@grpofcompanies.org"> <img src="images/K5.png"> <img src="images/95581890.gif" width="1060" height="170"> </a>
+    <div class="top1"> Taste of Traditions </div> <br>
+
+
+
+    <div id="btnDive" width="25%">
+        <ul class="btnDivList">
+          <br>  <li class="btn"> <a href="index.html"> Home </a> </li> <br>
+            <li class="btn"> <a href="Foods.html"> Foods Menu </a> </li> <br>
+            <li class="btn"> <a href="About.html"> About Us </a> </li> <br>
+            <li class="btn"> <a href="Contact.html"> Contact Us </a> </li>
+        </ul>
+           <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/refreshment.jpg" style="width:100%">
+    <div class="text ">Refreshment </div>
+  </div>
+   <div class="mySlides fade ">
+        <img src="images/ban.jpg " style="width:100% " >
+    <div class="text "> Lunch Deal</div>
+  </div>
+  <div class="mySlides fade ">
+        <img src="images/big-dipper.png " style="width:100% " >
+    <div class="text "> Pizza</div>
+  </div>
+   <div class="mySlides fade ">
+  <img src="images/refreshment1.jpg " style="width:100% ">
+    <div class="text "> Refreshment </div>
+  </div>
+   <div class="mySlides fade ">
+        <img src="images/taka.jpg " style="width:100% ">
+    <div class="text "> Dinner </div>
+  </div>
+   <div class="mySlides fade ">
+        <img src="images/berger.jpg " style="width:100% ">
+    <div class="text ">Lunch Deal </div>
+  </div>
+  <div class="mySlides fade ">
+        <img src="images/drink.jpg " style="width:100% ">
+    <div class="text "> Drink</div>
+    </div>
+
+  <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+  <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+  <div style="text-align:center ">
+  <span class="dot " onclick="currentSlide(1) "></span> 
+  <span class="dot " onclick="currentSlide(2) "></span> 
+  <span class="dot " onclick="currentSlide(3) "></span>
+  <span class="dot " onclick="currentSlide(4) "></span> 
+  <span class="dot " onclick="currentSlide(5) "></span> 
+  <span class="dot " onclick="currentSlide(6) "></span>
+  <span class="dot " onclick="currentSlide(7) "></span> 
+
+            </div>
+</div>
+<br>
+      
+    </div>
+  
+    <!-- Shabbir Barai (CMAD) - 405 - 1st Shift -->
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides ");
+  var dots = document.getElementsByClassName("dot ");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none "; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active ", " ");
+  }
+  slides[slideIndex-1].style.display = "block "; 
+  dots[slideIndex-1].className += " active ";
+}
+
+    setInterval(function () {
+        showSlides(slideIndex);
+    }, 3000)
+
+   
+</script>
+   
+<br>
+
+ <div id="whishlist"></div>
+        <div id="whishlist-page"><a href="Order.html ">Goto whishlist</a></div>
+
+
+    <div id="mainDiv">
+    </div>
+  <br>   <a href="https://www.facebook.com/krfastfood" /><img src="images\facebook.png" align="left" /></a>
+   <hr>
+            <div class="b02" align="center"> Copyright <i class="fa fa-copyright fa-1.90x"  aria-hidden="true" style="color:red"></i>  all the right of Khadija Restaurant</div>
+ 
+</body>
+
+<script src="./js/foods.js "></script>
+<script src="./js/functions.js "></script>
+<script src="./js/app.js "></script>
+
+
+</html>
